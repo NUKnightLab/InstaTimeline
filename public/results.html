@@ -1,0 +1,39 @@
+<script type="text/javascript">
+var updated = false;
+$('#my-timeline').bind('DOMNodeInserted DOMNodeRemoved', function() {
+  if (!updated) {
+    updated = true;
+    $('.loading--timeline').fadeIn(600);
+    $('.loading--message').hide();
+    setTimeout(function() {
+      console.log('here!');
+      var copies = $('.vco-timemarker-media').clone();
+      setTimeout(function() {
+        $('.banner-photos').hide().html($(copies).addClass('banner-image')).fadeIn(500);
+      }, 500);
+    }, 100);
+  }
+});
+</script>
+
+<div class="loading">
+  <div class="loading--message">
+    <h1>Loading your InstaTimeline...</h1>
+  </div>
+  <div class="loading--timeline">
+    <div class="timeline--above">
+      <div class="banner-main">
+        <div class="banner-photos">
+
+        </div>
+        <div class="splash-wrapper splash-wrapper--results">
+          <h1 class="splash-head">Insta<span class="light">Timeline</span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div id="my-timeline"></div> 
+    </div>
+  </div>
+</div>

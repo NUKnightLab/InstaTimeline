@@ -1,0 +1,276 @@
+html, body, #wrapper {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+.atss {
+  top: 10% !important;
+}
+
+/*hide times*/
+.vco-timeaxis .vco-timeaxis-content-container .vco-timeaxis-major .vco-timeaxis-tick .vco-timeaxis-tick-text, .vco-timeaxis .vco-timeaxis-content-container .vco-timeaxis-minor .vco-timeaxis-tick .vco-timeaxis-tick-text {
+  display: none !important;
+}
+
+.splash-container {
+  background: url('http://www.bridalguide.com/sites/default/files/slideshow-images/269-149894.jpg') no-repeat center center fixed;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: relative !important;
+}
+
+.splash-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.splash-head {
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.splash-subhead {
+  text-transform: none;
+  font-size: 110%;
+  line-height: 175%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.example-hashtags {
+  margin-top: 50px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.background-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.learn-more::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid rgba(0, 0, 0, 0);
+  border-right: 10px solid rgba(0, 0, 0, 0);
+  border-top: 10px solid #FFF;
+  margin: 0 auto;
+  display: block;
+}
+
+.example {
+  height: 100%;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 66.66%;
+  margin: 0 auto;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px dotted#EDEDED;
+  color: #FFF !important;
+  font-size: 150% !important;
+  padding-left: 35px;
+  width: 100%;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.input-tag {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  font-size: 250%;
+  color: #fff;
+}
+
+.credit {
+  position: fixed;
+  bottom: 0px;
+  right: 5px;
+  font-size: 8px;
+  color: #666;
+}
+
+@media (min-width: 78em) {
+  .splash-head {
+    font-size: 400%;
+    padding: 0;
+  }
+}
+
+.splash {
+  top: -250px;
+  height: 300px;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.timeline--above {
+  height: 20%;
+  overflow: hidden;
+}
+
+.timeline {
+  height: 77.5%;
+  padding-top: 2.5%;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*Style for yourtimeline */
+
+.timeline--above h1{
+	text-align: center;
+	font-size: 400%;
+  line-height: 150px;
+	font-family: 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.splash-wrapper--results {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-photos {
+  height: 100%;
+  width: 150%;
+  overflow: hidden;
+}
+
+.banner-image {
+  max-height: 100%;
+}
+
+.banner-main{
+  position: relative;
+  background-color: #ddd;
+  height: 100%;
+}
+
+.banner-main h1 {
+  margin: 0;
+}
+
+.loading {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.loading--timeline {
+  height: 100%;
+  width: 100%;
+}
+
+.loading--message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.loading--message h1 {
+  color: black !important;
+}
+
+.loading--timeline {
+  display: none;
+}
+
+.loading--timeline.show {
+  display: block;
+}
+
+/*Center the opening slide*/
+.vco-slide:first-child .vco-slide-scrollable-container {
+  margin-left: 100px;
+}
+
+h1{
+    margin:0 auto;
+    padding-bottom:1em;
+    padding-top:1em;
+    text-align: center;
+    color: white;
+    font-size:60px;
+    
+}
+
+
+
+
+@media (min--moz-device-pixel-ratio: 1.5),
+       (-o-min-device-pixel-ratio: 3/2),
+       (-webkit-min-device-pixel-ratio: 1.5),
+       (min-device-pixel-ratio: 1.5),
+       (min-resolution: 144dpi),
+       (min-resolution: 1.5dppx) {
+
+  .splash-container {
+  background: url('http://www.bridalguide.com/sites/default/files/slideshow-images/269-149894.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: relative !important;
+  }
+
+ 
+}

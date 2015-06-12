@@ -1,0 +1,61 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.input').focus();
+
+  $('.learn-more').click(function(e) {
+    e.preventDefault();
+    $('html,body').animate({scrollTop: $('.example').offset().top});
+  })
+  console.log('focused');
+
+  feedUrl = '/feed/?hashtag=pagingthemarcels';
+  console.log(feedUrl);
+
+  // two arguments: the id of the Timeline container (no '#')
+  // and the URL to your JSON data file. In this case, a relative URL.
+  window.timeline = new VCO.Timeline('my-timeline', feedUrl);
+
+  // You may also want to ensure that the timeline redraws 
+  // when the window is resized
+  window.onresize = function(event) {
+    timeline.updateDisplay();
+  }
+
+
+});
+</script>
+
+<div class="splash-wrapper">
+  <div class="splash-container">
+    <div class="background-filter"></div>
+      <div class="splash">
+          <h1 class="splash-head">Insta<span class="light">Timeline</span></h1>
+          <p class="splash-subhead">
+              InstaTimeline creates a beautifully crafted timeline customized to your wedding. Enter your hashtag and get started.
+          </p>
+
+            <div class="input-wrapper">
+              <span class="input-tag">#</span>
+              <input class="input" ng-model="hashtag" placeholder=""></input>
+            </div>
+
+          <p>
+            <a ng-click="generate()" id = "generateButton" class="pure-button pure-button-primary">Generate</a>
+          </p>
+          <div class="example-hashtags">
+            <p>Use your own hashtag or try these:<br />
+            #pagingthemarcels<br />
+            #marissaplustyler<br />
+            #kaminslakehousewedding2013
+            </p>
+          </div>
+      </div>
+      <a href="#" class="learn-more">See an Example</a>
+      <div class="credit">Photo credit: http://www.russellordphoto.com/</div>
+  </div>
+  <div class="example">
+    <div id="my-timeline">
+
+    </div>
+  </div>
+</div>

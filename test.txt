@@ -1,0 +1,8 @@
+
+> angular-seed@0.0.0 prestart /Users/patrickfweston/Sites/instatimeline
+> npm install
+
+
+> angular-seed@0.0.0 postinstall /Users/patrickfweston/Sites/instatimeline
+> ./node_modules/bower/bin/bower install
+

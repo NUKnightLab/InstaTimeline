@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "InstaTimeline": {
+      "applicationId": "U2tkwGQJJeG5hsvx1hpTaZ7tKSbp6JZghMmDFVct",
+      "masterKey": "kZvMDR2ue8ZKeO9wDVJhBCT4S9lYRlGJopGiv88g"
+    },
+    "_default": {
+      "link": "InstaTimeline"
+    }
+  }
+}
